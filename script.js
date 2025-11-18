@@ -7,7 +7,7 @@ menuToggle.addEventListener('click', () => {
 
 
 const typingText = document.getElementById('typing-text');
-const words = ["Science Communicator", "Tech & AI Enthusiast", "Career Growth Mentor"];
+const words = ["Science Communicator, Health Content Creator, Medical Writer"];
 let wordIndex = 0;
 let charIndex = 0;
 let deleting = false;
@@ -73,3 +73,4 @@ function sendEmail(event) {
     formMessage.style.color = "red";
   });
 }
+
