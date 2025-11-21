@@ -8,6 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #222;
   background-color: #fff;
+  font-size: 16px
 }
 
 
@@ -696,3 +697,4 @@ footer {
     right: 15px;
   }
 }
+
