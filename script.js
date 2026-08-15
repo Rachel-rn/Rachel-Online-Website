@@ -2,7 +2,16 @@ const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  const isOpen = navLinks.classList.toggle('active');
+  menuToggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+});
+
+// Close the mobile menu when a link inside it is clicked
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    menuToggle.innerHTML = '&#9776;';
+  });
 });
 
 // Dark / light mode toggle — light by default, remembers the visitor's choice
