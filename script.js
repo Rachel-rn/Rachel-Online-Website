@@ -126,7 +126,7 @@ function sendEmail(event) {
 
   emailjs.send("service_wwe7zcv", "template_hya1myv", {
     from_name: document.getElementById("name").value,
-    from_email: document.getElementById("email").value,
+    email: document.getElementById("email").value,
     message: document.getElementById("message").value
   })
   .then(() => {
